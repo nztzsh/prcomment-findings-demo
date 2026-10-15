@@ -5,6 +5,7 @@ go 1.21
 require (
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/sirupsen/logrus v1.4.0
+	golang.org/x/text v0.3.0
 )
 
 require (
