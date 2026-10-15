@@ -6,6 +6,7 @@ import (
 	"os/exec"
 
 	jwt "github.com/dgrijalva/jwt-go"
+	log "github.com/sirupsen/logrus"
 )
 
 func main() {
@@ -20,6 +21,7 @@ func main() {
 		os.Exit(1)
 	}
 	fmt.Println("jwt:", signed)
+	log.Info("demo startup complete")
 
 	if len(os.Args) > 1 {
 		// Intentional code-injection pattern for SAST detection.
